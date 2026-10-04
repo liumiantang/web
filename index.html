@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0d0c0a" />
+    <meta name="description" content="循着飞天衣带，进入敦煌壁画故事目录。" />
+    <title>敦煌 · 壁上故事</title>
+    <link rel="preload" as="image" href="assets/portal/buddha-line-face.png" />
+    <link rel="stylesheet" href="portal.css?v=apsara-soft-arrival-20261004a" />
+  </head>
+  <body>
+    <main class="portal" id="portal" data-phase="loading">
+      <section class="opening" id="opening" aria-label="敦煌故事序章">
+        <div class="opening__face-frame">
+          <img class="opening__face-image" src="assets/portal/buddha-line-face.png" alt="黑底白线描绘的正面佛面" fetchpriority="high" />
+          <canvas class="opening__face-canvas" id="face-canvas" width="1448" height="1086" aria-hidden="true"></canvas>
+          <button class="opening__eye-hit" id="eye-hit" type="button" aria-label="轻触佛像左眼，开启故事目录" disabled></button>
+          <p class="opening__eye-caption" aria-hidden="true">凝眸 · 展卷</p>
+        </div>
+        <p class="opening__signature">DUNHUANG · MOGAO GROTTOES</p>
+        <a class="opening__catalog-link" href="#story-world" id="catalog-link">直接进入故事目录 <span aria-hidden="true">↗</span></a>
+        <p class="opening__hint" id="eye-hint">轻触佛像左眼，循金线入画</p>
+      </section>
+
+      <div class="eye-flash" aria-hidden="true"></div>
+
+      <section class="story-world" id="story-world" aria-label="敦煌壁画故事目录" aria-hidden="true" inert>
+        <div class="story-world__colorfield" aria-hidden="true"></div>
+        <div class="story-world__grain" aria-hidden="true"></div>
+
+        <img class="story-world__panorama" data-src="鹿王本生故事畫.jpg" alt="莫高窟第257窟《鹿王本生图》全景壁画" />
+
+        <div class="story-world__arrival-glow" aria-hidden="true"></div>
+        <svg class="story-world__threads" viewBox="0 0 1440 900" aria-hidden="true">
+          <defs>
+            <linearGradient id="silk-teal" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#b9955e" />
+              <stop offset=".45" stop-color="#367d76" />
+              <stop offset="1" stop-color="#80aaa0" />
+            </linearGradient>
+            <linearGradient id="silk-red" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#bd9558" />
+              <stop offset=".55" stop-color="#934f39" />
+              <stop offset="1" stop-color="#cf9260" />
+            </linearGradient>
+          </defs>
+          <path id="flight-silk-teal" class="story-world__thread story-world__thread--teal" />
+          <path id="flight-silk-red" class="story-world__thread story-world__thread--red" />
+        </svg>
+
+        <figure class="story-world__apsara" aria-hidden="true">
+          <img class="story-world__ribbon" data-src="assets/apsara/apsara-ribbons-v1.png" alt="" />
+          <img class="story-world__body" data-src="assets/apsara/apsara-body-pose-01.png" alt="" />
+        </figure>
+
+        <header class="story-world__heading">
+          <p class="story-world__eyebrow"><span></span> 敦煌 · 壁上故事目录</p>
+          <h1 tabindex="-1">一壁千年，<br /><em>循线入画。</em></h1>
+          <p class="story-world__description">沿着画卷，选择一则敦煌故事。</p>
+        </header>
+
+        <nav class="story-directory" aria-label="选择敦煌故事">
+          <a class="story-entry" href="鹿王本生.html" aria-label="进入完整故事：鹿王本生，北魏莫高窟第257窟">
+            <span class="story-entry__number">01</span>
+            <span class="story-entry__copy">
+              <span class="story-entry__meta">北魏 · 莫高窟第257窟</span>
+              <span class="story-entry__title">鹿王本生</span>
+              <span class="story-entry__detail">一幅壁画，八个瞬间。进入完整故事 <b aria-hidden="true">↗</b></span>
+            </span>
+          </a>
+        </nav>
+
+        <div class="story-world__footer">
+          <span>MOGAO GROTTOES · STORIES ON THE WALL</span>
+          <span>壁画全景 · 第257窟</span>
+        </div>
+      </section>
+    </main>
+    <script src="portal-eye.js?v=apsara-soft-arrival-20261004a" defer></script>
+    <script src="portal-flight.js?v=apsara-soft-arrival-20261004a" defer></script>
+    <script src="portal.js?v=apsara-soft-arrival-20261004a" defer></script>
+  </body>
+</html>

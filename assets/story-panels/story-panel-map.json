@@ -1,0 +1,39 @@
+{
+  "source": "../../鹿王本生故事畫.jpg",
+  "canvas": {
+    "width": 6496,
+    "height": 1114
+  },
+  "panelSize": {
+    "width": 1696,
+    "height": 1114
+  },
+  "overlapPx": 96,
+  "panels": [
+    {
+      "file": "cave257-panel-01-x0.png",
+      "sourceX": 0,
+      "revealOrder": 1,
+      "position": "outer-left"
+    },
+    {
+      "file": "cave257-panel-02-x1600.png",
+      "sourceX": 1600,
+      "revealOrder": 4,
+      "position": "inner-left"
+    },
+    {
+      "file": "cave257-panel-03-x3200.png",
+      "sourceX": 3200,
+      "revealOrder": 3,
+      "position": "inner-right"
+    },
+    {
+      "file": "cave257-panel-04-x4800.png",
+      "sourceX": 4800,
+      "revealOrder": 2,
+      "position": "outer-right"
+    }
+  ],
+  "suggestedRevealOrder": [1, 4, 3, 2]
+}

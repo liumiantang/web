@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#17110e" />
+    <meta name="description" content="沿着莫高窟第257窟的壁画，滚动走进鹿王本生的故事。" />
+    <title>鹿王本生 · 一幅壁画的旅程</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=mural-fullscreen-pan-20261003f" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="回到敦煌故事首页">
+        <span class="wordmark__seal">敦</span>
+        <span>敦煌 · 莫高窟第257窟</span>
+      </a>
+      <a class="header-link" href="#story-start">进入故事 <span aria-hidden="true">↘</span></a>
+    </header>
+
+  <main id="top">
+    <div class="flight-overlay" id="flight-overlay" aria-hidden="true">
+      <div class="flight-group flight-group--back">
+        <div class="flight__ribbon flight__ribbon--dark"><img src="assets/apsara/apsara-ribbon-dark.png" alt="" /></div>
+        <div class="flight__ribbon flight__ribbon--turquoise"><img src="assets/apsara/apsara-ribbon-turquoise.png" alt="" /></div>
+      </div>
+      <svg class="flight-ribbon-field flight-ribbon-field--back" id="flight-ribbons-back" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="silk-back-teal" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#194b4a" />
+            <stop offset=".28" stop-color="#2c8880" />
+            <stop offset=".48" stop-color="#95c0a2" />
+            <stop offset=".62" stop-color="#e5c57d" />
+            <stop offset=".79" stop-color="#28746e" />
+            <stop offset="1" stop-color="#173e43" />
+          </linearGradient>
+          <linearGradient id="silk-back-vermilion" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#6b2724" />
+            <stop offset=".3" stop-color="#bb4931" />
+            <stop offset=".54" stop-color="#e99555" />
+            <stop offset=".7" stop-color="#f0d191" />
+            <stop offset=".86" stop-color="#a9342a" />
+            <stop offset="1" stop-color="#5b2525" />
+          </linearGradient>
+          <linearGradient id="silk-back-shadow" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#30271f" />
+            <stop offset=".38" stop-color="#69543c" />
+            <stop offset=".56" stop-color="#d3a762" />
+            <stop offset=".72" stop-color="#315e59" />
+            <stop offset="1" stop-color="#1d302f" />
+          </linearGradient>
+          <pattern id="silk-back-weave" width="42" height="42" patternUnits="userSpaceOnUse" patternTransform="rotate(22)">
+            <path d="M0 8H42 M0 21H42 M0 34H42" stroke="#ffe0a0" stroke-opacity=".14" stroke-width="1" />
+            <path d="M8 0V42 M29 0V42" stroke="#311f1b" stroke-opacity=".1" stroke-width="2" />
+          </pattern>
+        </defs>
+        <path id="ribbon-back-teal" class="flight-ribbon-shape flight-ribbon-shape--teal" d="" fill="url(#silk-back-teal)" />
+        <path id="ribbon-back-teal-weave" class="flight-ribbon-weave" d="" fill="url(#silk-back-weave)" />
+        <path id="ribbon-back-red" class="flight-ribbon-shape flight-ribbon-shape--red" d="" fill="url(#silk-back-vermilion)" />
+        <path id="ribbon-back-red-weave" class="flight-ribbon-weave" d="" fill="url(#silk-back-weave)" />
+        <path id="ribbon-back-shadow" class="flight-ribbon-shape flight-ribbon-shape--shadow" d="" fill="url(#silk-back-shadow)" />
+      </svg>
+      <figure class="flight__mural-window">
+        <img class="mural-frame is-active" data-mural-frame="0" src="assets/story-panels/cave257-web-panel-01.jpg" alt="" />
+        <img class="mural-frame" data-mural-frame="1" src="assets/story-panels/cave257-web-panel-04.jpg" alt="" />
+        <img class="mural-frame" data-mural-frame="2" src="assets/story-panels/cave257-web-panel-03.jpg" alt="" />
+        <img class="mural-frame" data-mural-frame="3" src="assets/story-panels/cave257-web-panel-02.jpg" alt="" />
+        <figcaption><span id="panel-caption">河水中的救助</span><span>壁画局部 · 第257窟</span></figcaption>
+      </figure>
+      <div class="flight-group flight-group--front">
+        <div class="flight__ribbon flight__ribbon--vermilion"><img src="assets/apsara/apsara-ribbon-vermilion.png" alt="" /></div>
+        <div class="flight__body">
+          <img class="pose" data-pose-image="0" src="assets/apsara/apsara-body-pose-01.png" alt="" />
+          <img class="pose" data-pose-image="1" src="assets/apsara/apsara-body-pose-02.png" alt="" />
+          <img class="pose" data-pose-image="2" src="assets/apsara/apsara-body-pose-03.png" alt="" />
+          <img class="pose" data-pose-image="3" src="assets/apsara/apsara-body-pose-04-v3.png" alt="" />
+        </div>
+        <span class="flight__glimmer flight__glimmer--one"></span>
+        <span class="flight__glimmer flight__glimmer--two"></span>
+      </div>
+      <div class="flight-group flight-group--unity" aria-hidden="true">
+        <canvas class="apsara-flight-canvas" id="apsara-flight-canvas"></canvas>
+        <iframe
+          id="apsara-unity-frame"
+          data-src="assets/unity/apsara/player.html?v=apsara-back-ribbon-20261002u"
+          title="敦煌飞天骨骼动画"
+          loading="lazy"
+          tabindex="-1"
+          allow="fullscreen"
+        ></iframe>
+      </div>
+      <svg class="flight-ribbon-field flight-ribbon-field--front" id="flight-ribbons-front" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="silk-front-teal" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#163b3b" />
+            <stop offset=".3" stop-color="#2a7973" />
+            <stop offset=".5" stop-color="#e7c77f" />
+            <stop offset=".68" stop-color="#4aa194" />
+            <stop offset="1" stop-color="#184c4a" />
+          </linearGradient>
+          <linearGradient id="silk-front-red" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#51201f" />
+            <stop offset=".34" stop-color="#ad382b" />
+            <stop offset=".52" stop-color="#f0cb83" />
+            <stop offset=".69" stop-color="#d45c37" />
+            <stop offset="1" stop-color="#6c2524" />
+          </linearGradient>
+        </defs>
+        <path id="ribbon-front-teal" class="flight-ribbon-shape flight-ribbon-shape--front flight-ribbon-shape--teal" d="" fill="url(#silk-front-teal)" />
+        <path id="ribbon-front-red" class="flight-ribbon-shape flight-ribbon-shape--front flight-ribbon-shape--red" d="" fill="url(#silk-front-red)" />
+      </svg>
+      <svg class="flight-veil" id="flight-veil" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="veil-teal" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#174947" />
+            <stop offset=".28" stop-color="#27776e" />
+            <stop offset=".48" stop-color="#528c7b" />
+            <stop offset=".57" stop-color="#bb8450" />
+            <stop offset=".72" stop-color="#22615d" />
+            <stop offset="1" stop-color="#12383d" />
+          </linearGradient>
+          <linearGradient id="veil-vermilion" x1="1" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#54211f" />
+            <stop offset=".25" stop-color="#ab3d2c" />
+            <stop offset=".46" stop-color="#d7834a" />
+            <stop offset=".58" stop-color="#b54e36" />
+            <stop offset=".78" stop-color="#64302a" />
+            <stop offset="1" stop-color="#321e1b" />
+          </linearGradient>
+          <pattern id="veil-gold-weave" width="38" height="38" patternUnits="userSpaceOnUse" patternTransform="rotate(18)">
+            <path d="M0 6H38 M0 19H38 M0 32H38" stroke="#f5d89a" stroke-opacity=".13" stroke-width="1" />
+            <path d="M11 0V38 M30 0V38" stroke="#211b18" stroke-opacity=".12" stroke-width="2" />
+          </pattern>
+        </defs>
+        <g id="veil-left-group">
+          <path id="veil-left-cloth" class="flight-veil__cloth" d="" fill="url(#veil-teal)" />
+          <path id="veil-left-weave" class="flight-veil__weave" d="" fill="url(#veil-gold-weave)" />
+          <path id="veil-left-folds" class="flight-veil__folds" d="" />
+        </g>
+        <g id="veil-right-group">
+          <path id="veil-right-cloth" class="flight-veil__cloth" d="" fill="url(#veil-vermilion)" />
+          <path id="veil-right-weave" class="flight-veil__weave" d="" fill="url(#veil-gold-weave)" />
+          <path id="veil-right-folds" class="flight-veil__folds" d="" />
+        </g>
+      </svg>
+    </div>
+
+    <section class="hero" aria-labelledby="hero-title">
+        <figure class="hero__mural" aria-hidden="true">
+          <img src="鹿王本生故事畫.jpg" alt="" decoding="async" fetchpriority="high" />
+        </figure>
+        <div class="hero__content">
+          <p class="eyebrow"><span class="eyebrow__line"></span> 北魏 · 敦煌莫高窟第257窟</p>
+          <h1 id="hero-title">鹿王<br /><em>本生</em></h1>
+          <p class="hero__subtitle">一幅壁画，八个瞬间。<br />沿着故事的方向，重新走近千年前的敦煌。</p>
+          <a class="scroll-cta" href="#story-start">
+            <span class="scroll-cta__icon" aria-hidden="true">↓</span>
+            <span><strong>向下，走进壁画</strong><small>SCROLL TO ENTER THE STORY</small></span>
+          </a>
+        </div>
+        <div class="hero__side-note" aria-hidden="true">THE NINE-COLORED DEER · JĀTAKA</div>
+        <div class="hero__bottom-rule" aria-hidden="true"><span></span><i>257</i><span></span></div>
+      </section>
+
+      <section class="intro" aria-label="故事导读">
+        <div class="intro__index">01 <span>—</span> 04</div>
+        <p>在第257窟北壁，鹿王的故事沿着长墙展开。<br class="desktop-only" />救助、许诺、背叛与陈情，随着你的滚动，一段段从壁画中显现。</p>
+        <div class="intro__mark" aria-hidden="true">鹿王本生图</div>
+      </section>
+
+      <section class="story-experience" id="story-start" aria-label="鹿王本生故事">
+        <div class="story-grid">
+          <div class="story-beats">
+            <article class="story-beat" id="beat-1" data-beat="0" data-panel="0" data-pose="0">
+              <div class="beat-card">
+                <p class="beat-card__kicker"><span>第一幕</span><span>救助</span></p>
+                <h2>河水之中，<br />有一只鹿王。</h2>
+                <p>一个人落入急流，眼看就要被河水吞没。鹿王听见呼救，跃入水中，将他救上岸来。</p>
+                <p class="beat-card__aside">善意，先于名字与回报。</p>
+                <a class="beat-next" href="#beat-2">继续向下 <span aria-hidden="true">↓</span></a>
+              </div>
+            </article>
+
+            <article class="story-beat" id="beat-2" data-beat="1" data-panel="1" data-pose="1">
+              <div class="beat-card">
+                <p class="beat-card__kicker"><span>第二幕</span><span>许诺</span></p>
+                <h2>“不要说出，<br />我在何处。”</h2>
+                <p>鹿王只求他保守自己的行踪。获救的人答应了，一句承诺，就这样留在两者之间。</p>
+                <p class="beat-card__aside">一诺很轻，也可能重如一生。</p>
+                <a class="beat-next" href="#beat-3">继续向下 <span aria-hidden="true">↓</span></a>
+              </div>
+            </article>
+
+            <article class="story-beat" id="beat-3" data-beat="2" data-panel="3" data-pose="2">
+              <div class="beat-card">
+                <p class="beat-card__kicker"><span>第三幕</span><span>背叛</span></p>
+                <h2>王后的梦，<br />惊动了整座王城。</h2>
+                <p>王后想得到鹿王的皮毛。面对悬赏，获救的人忘记了自己的许诺，带领国王与猎队前往鹿王所在之处。</p>
+                <p class="beat-card__aside">故事从此有了另一种方向。</p>
+                <a class="beat-next" href="#beat-4">继续向下 <span aria-hidden="true">↓</span></a>
+              </div>
+            </article>
+
+            <article class="story-beat" id="beat-4" data-beat="3" data-panel="2" data-pose="3">
+              <div class="beat-card">
+                <p class="beat-card__kicker"><span>第四幕</span><span>陈情</span></p>
+                <h2>鹿王没有逃走，<br />而是向国王开口。</h2>
+                <p>乌鸦唤醒了鹿王。面对围猎的人群，它讲述自己如何救人，也说出那个人此刻就在队伍之中。国王听后，放下了猎弓。</p>
+                <p class="beat-card__aside">恩义与背叛，都留在了这幅长卷里。</p>
+                <a class="beat-next" href="#ending">读到故事的尽头 <span aria-hidden="true">↓</span></a>
+              </div>
+            </article>
+          </div>
+
+          <aside class="scene-sticky" aria-label="壁画显露与飞天动画">
+            <div class="scene-mural" aria-hidden="true">
+              <div class="scene-mural__camera" id="scene-mural-camera">
+                <div class="scene-mural__wall" id="scene-mural-wall">
+                  <img class="scene-mural__tile" data-wall-tile="0" data-src="assets/story-panels/cave257-web-panel-01.jpg" alt="" />
+                  <img class="scene-mural__tile" data-wall-tile="1" data-src="assets/story-panels/cave257-web-panel-02.jpg" alt="" />
+                  <img class="scene-mural__tile" data-wall-tile="2" data-src="assets/story-panels/cave257-web-panel-03.jpg" alt="" />
+                  <img class="scene-mural__tile" data-wall-tile="3" data-src="assets/story-panels/cave257-web-panel-04.jpg" alt="" />
+                  <svg class="scene-water-ripple" id="scene-water-ripple" viewBox="0 0 6496 1114" preserveAspectRatio="none" aria-hidden="true">
+                    <defs>
+                      <clipPath id="river-water-mask">
+                        <path d="M180 770 C330 650 510 596 700 630 C880 661 996 776 1175 790 C1365 804 1518 846 1696 914 L1696 1114 L180 1114 Z" />
+                      </clipPath>
+                      <filter id="river-current-filter" x="-5%" y="-8%" width="110%" height="116%">
+                        <feTurbulence id="river-current-noise" type="fractalNoise" baseFrequency="0.014 0.04" numOctaves="1" seed="7" result="current" />
+                        <feDisplacementMap id="river-current-displacement" in="SourceGraphic" in2="current" scale="2.4" xChannelSelector="R" yChannelSelector="G" />
+                      </filter>
+                    </defs>
+                    <g class="scene-water-ripple__surface" clip-path="url(#river-water-mask)" filter="url(#river-current-filter)">
+                      <image id="river-current-surface" x="0" y="0" width="1696" height="1114" preserveAspectRatio="none" />
+                    </g>
+                    <g class="scene-water-ripple__flow" clip-path="url(#river-water-mask)" filter="url(#river-current-filter)">
+                      <path d="M80 820 C260 780 410 850 590 820 S900 760 1080 822 S1390 884 1660 820" />
+                      <path d="M80 900 C270 858 430 928 625 896 S930 846 1115 906 S1410 960 1670 900" />
+                      <path d="M130 980 C310 945 475 1002 665 978 S970 930 1160 982 S1455 1030 1680 982" />
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="scene-wall" aria-hidden="true"></div>
+            <div class="scene-light" aria-hidden="true"></div>
+            <div class="scene-meta">
+              <span class="scene-meta__label">壁画正在显现</span>
+              <span class="scene-meta__count"><b id="active-count">01</b><i>/</i>04</span>
+            </div>
+
+            <div class="scene-footer"><span>THE NINE-COLORED DEER</span><span>莫高窟 · 257</span></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="ending" id="ending" aria-labelledby="ending-title">
+        <figure class="ending__mural" aria-hidden="true">
+          <img src="鹿王本生故事畫.jpg" alt="" loading="lazy" decoding="async" />
+        </figure>
+        <p class="eyebrow"><span class="eyebrow__line"></span> 故事的尽头</p>
+        <h2 id="ending-title">善意曾经发生，<br /><em>便不会消失。</em></h2>
+        <p class="ending__copy">鹿王本生，是关于慈悲与守信的故事。<br />而这面墙，替它留住了回声。</p>
+        <a class="ending__back" href="#top">回到故事的开端 <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>壁画图像：用户提供的莫高窟第257窟鹿王本生图裁切素材。</p>
+      <p>故事线索参考 <a href="https://www.e-dunhuang.com/cave/10.0001/0001.0001.0257" target="_blank" rel="noreferrer">数字敦煌 · 第257窟</a>。飞天为独立素材的动态演绎，并非该幅鹿王本生壁画中的人物。</p>
+    </footer>
+
+    <script src="script.js?v=mural-fullscreen-pan-20261003f"></script>
+  </body>
+</html>

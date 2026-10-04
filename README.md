@@ -4,7 +4,7 @@
 
 ## 本地预览
 
-在项目目录运行 `python preview_server.py`，再访问 http://127.0.0.1:8766。也可以用 VS Code 的 Live Server 打开 `index.html`。分享时请保留整个项目目录结构。
+在项目目录运行 `python preview_server.py`，再访问脚本提示的本机地址。也可以用 VS Code 的 Live Server 打开 `index.html`。首页使用相对路径加载图像和脚本，分享时请保留整个项目目录结构。
 
 ## 主要文件
 
